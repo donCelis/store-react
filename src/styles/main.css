@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+/* Global styles */
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+button{
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.row{
+  display: flex;
+  align-items: center; /* y */
+}
+.space-bt{
+  justify-content: space-between; /* x */
+}
+.gap-sm{
+  gap: 3rem;
+}
+.img-fluid{
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* Header */
+header > .container{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.logo-store{
+  display: inline-flex;
+  cursor: pointer;
+}
+.main-menu, .second-menu{
+  gap: 1.5rem;
+}
+.main-menu a{
+  display: block;
+  color: gray;
+  padding: 2rem 0;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom ease 200ms;
+}
+.main-menu a:hover{
+  border-bottom: 3px solid tomato;
+  color: black;
+}
+.btn-profile{
+  width: 45px;
+}

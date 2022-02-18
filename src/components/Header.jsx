@@ -8,8 +8,8 @@ const Header = () => {
   const navLinks = ['Collections', 'Men', 'Women', 'About', 'Contact']
   return (
     <header>
-      <div className='container row'>
-        <menu className='row'>
+      <div className='container row space-bt'>
+        <menu className='row gap-sm'>
           <h1 className='logo-store'>
             <img src={logoStore} alt='La mejor tienda de zapatos' />
           </h1>

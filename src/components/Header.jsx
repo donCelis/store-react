@@ -1,6 +1,7 @@
 import logoStore from '../images/logo.svg'
 import iconCart from '../images/icon-cart.svg'
 import avatar from '../images/image-avatar.png'
+import iconMenu from '../images/icon-menu.svg'
 
 import '../styles/header.css'
 
@@ -10,6 +11,9 @@ const Header = () => {
     <header>
       <div className='container row space-bt'>
         <menu className='row gap-sm'>
+          <button className='icon-menu'>
+            <img src={iconMenu} alt='icon menu' />
+          </button>
           <h1 className='logo-store'>
             <img src={logoStore} alt='La mejor tienda de zapatos' />
           </h1>

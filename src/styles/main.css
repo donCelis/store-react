@@ -1,67 +1,115 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: 0;
 }
-/* Global styles */
-body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Varibles */
+:root {
+  /* Responsive */
+  --size-mobile: 375px;
+  --size-desktop: 1440px;
+  /* Colors */
+  --main-color: hsl(26, 100%, 55%);
+  --comp-color: black;
+  --neutral-text: hsl(219, 9%, 45%);
+
+  /* typo */
+  --font-size: 16px;
+  --main-font: "Kumbh Sans", sans-serif;
 }
-ul{
+
+/* Global styles */
+body {
+  font-family: var(--main-font);
+}
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
-  color: black;
+  color: var(--comp-color);
 }
-button{
+button {
   cursor: pointer;
   border: 0;
   background: transparent;
 }
-.container{
+.container {
   width: 80%;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: var(--size-desktop);
 }
-.row{
+.row {
   display: flex;
-  align-items: center; /* y */
+  align-items: center;
 }
-.space-bt{
-  justify-content: space-between; /* x */
+.space-bt {
+  justify-content: space-between;
 }
-.gap-sm{
+.gap-sm {
   gap: 3rem;
 }
-.img-fluid{
+.img-fluid {
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
 }
 /* Header */
-header > .container{
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+header > .container {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
 }
-.logo-store{
+.logo-store {
   display: inline-flex;
   cursor: pointer;
 }
-.main-menu, .second-menu{
-  gap: 1.5rem;
+.icon-menu {
+  display: none;
 }
-.main-menu a{
+.main-menu,
+.second-menu {
+  gap: 1.6rem;
+}
+.main-menu a {
   display: block;
-  color: gray;
-  padding: 2rem 0;
+  color: var(--neutral-text);
+  padding: 2.6rem 0;
   border-bottom: 3px solid transparent;
   transition: border-bottom ease 200ms;
 }
-.main-menu a:hover{
-  border-bottom: 3px solid tomato;
-  color: black;
+.main-menu a:hover {
+  border-bottom: 3px solid var(--main-color);
+  color: var(--comp-color);
 }
-.btn-profile{
+.btn-profile {
   width: 45px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  transition: border ease 200ms;
+}
+.btn-profile:hover {
+  border: 2px solid var(--main-color);
+}
+@media screen and (max-width: 520px) {
+  .gap-sm{
+    gap: 1rem;
+  }
+  header > .container {
+    width: 90%;
+    padding: 1rem 0;
+  }
+  .icon-menu {
+    display: block;
+  }
+  .main-menu {
+    display: none;
+  }
+  .second-menu {
+    gap: 1rem;
+  }
+  .btn-profile {
+    width: 28px;
+  }
 }

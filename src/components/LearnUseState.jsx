@@ -32,9 +32,9 @@ const LearnUseState = () => {
     <div className='container'>
       <p>Contador</p>
       <section style={{ display: 'flex', alignItems: 'center' }}>
-        <button onClick={() => setCount(count - 1)} style={styles}>-</button>
+        <button onClick={() => count > 0 && setCount(count - 1)} style={styles}>-</button>
         <p>{count}</p>
-        <button onClick={() => setCount(count + 1)} style={styles}>+</button>
+        <button onClick={() => count < 10 && setCount(count + 1)} style={styles}>+</button>
       </section>
     </div>
   )

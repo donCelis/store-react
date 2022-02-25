@@ -30,7 +30,6 @@ const LearnUseState = () => {
 
   return (
     <div className='container'>
-      <p>Contador</p>
       <section style={{ display: 'flex', alignItems: 'center' }}>
         <button onClick={() => count > 0 && setCount(count - 1)} style={styles}>-</button>
         <p>{count}</p>

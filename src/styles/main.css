@@ -91,6 +91,15 @@ header > .container {
 .btn-profile:hover {
   border: 2px solid var(--main-color);
 }
+.gallery{
+  width: 45%;
+}
+.thumbnails{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+/* responsive */
 @media screen and (max-width: 520px) {
   .gap-sm{
     gap: 1rem;

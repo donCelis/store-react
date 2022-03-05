@@ -11,9 +11,9 @@ ReactDOM.render(
   <React.StrictMode>
     <>
       <Header />
-      <Layout />
-      {/*  <Gallery /> */}
-      {/* <LearnUseState /> */}
+      {/* <Layout /> */}
+      <Gallery />
+      <LearnUseState />
     </>
   </React.StrictMode>,
   document.getElementById('root')

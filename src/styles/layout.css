@@ -30,3 +30,13 @@
 .layout .layout-item:last-child {
   background: green;
 }
+@media screen and (max-width: 520px) {
+  .layout{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .layout .layout-item{
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
